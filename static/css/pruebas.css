@@ -1,0 +1,45 @@
+h1 {
+    background-color: blanchedalmond;
+    border: 4px solid maroon;
+    text-align: center;
+    padding: 4px;
+    color: maroon;
+}
+
+p::selection{
+    background-color: red;
+}
+
+@media (min-width: 1000px){
+    h2::before{
+        content:"If you make the screen smaller this will change "
+    }
+    h2{
+        border: 3px solid red;
+        background-color: black;
+        color: wheat;
+    }
+}
+
+@media (max-width: 999px){
+    h2::before{
+        content:"If you make the screen BIGGER this will change "
+    }
+    h2{
+        border: 5px dotted blue;
+        background-color: green;
+    }
+}
+
+.boxes {
+    display: flex; /* Allows the boxes organize by itself*/
+    flex-wrap: wrap;
+}
+
+.boxes > div { /* Applies the conditions to the direct div of the container*/
+    background-color: springgreen;
+    font-size: 20px;
+    margin: 20px;
+    padding: 20px;
+    width: 200px;
+}

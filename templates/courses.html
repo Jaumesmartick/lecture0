@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/courses.css">
+    <title>Courses</title>
+</head>
+
+<body>
+    {% extends "layout.html" %}
+    {% block content %}
+    <div>
+        <div class="header">
+            <h1>Courses Available</h1>
+        </div>
+        <div class="courses">
+                <h1 class="course">Primer Curso</h1>
+                <img src="../static/img/matematicas.jpg">
+                <h1 class="course">Segundo Curso</h1>
+                <img src="../static/img/lenguaje.jpg">
+                <h1 class="course">Tercer Curso</h1>
+                <img src="../static/img/ingles.jpg">
+        </div>
+    </div>
+    <div>
+        <table class="course-offer">
+            <tr> <!-- table row -->
+                <th class="course-offer-tittle">Curso</th>
+                <th class="course-offer-tittle">Descricion</th>
+                <th class="course-offer-tittle">Edad</th>
+                <th class="course-offer-tittle">Precio</th>
+            </tr>
+            <tr>
+                <td class="course-offer-content">Matematicas</td>
+                <td class="course-offer-content">Curso de Matematicas</td>
+                <td class="course-offer-content">3-10 años</td>
+                <td class="course-offer-content">120 €</td>
+            </tr>
+            <tr>
+                <td class="course-offer-content">Lenguaje</td>
+                <td class="course-offer-content">Curso de Lengua Castellana</td>
+                <td class="course-offer-content">6-12 años</td>
+                <td class="course-offer-content">130 €</td>
+            </tr>
+            <tr>
+                <td class="course-offer-content">Inglés</td>
+                <td class="course-offer-content">Curso de Inglés</td>
+                <td class="course-offer-content">10-16 años</td>
+                <td class="course-offer-content">145 €</td>
+            </tr>
+
+        </table>
+    </div>
+    {% endblock %}
+</body>
+</html>

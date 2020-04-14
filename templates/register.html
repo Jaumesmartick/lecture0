@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/register.css">
+    <title>Register</title>
+</head>
+<body>
+    {% extends "layout.html" %} <!--Import the navigation bar-->
+    <div>
+        {% block content%}
+        <h1 class="header">Register Form</h1>
+        <div class="register">
+            <form action="{{url_for('register')}}" method="post">
+                <div class="row">
+                    <div class="col-25">
+                        <label for="fname">Username</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="fname" name="username" placeholder="Username">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="lname">First Name</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="lname" name="first_name" placeholder="First Name">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="lname">Last Name</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="lname" name="last_name" placeholder="Last Name">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="lname">Email</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="email" id="lname" name="email" placeholder="Email">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="fname">Password</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="password" id="fname" name="password1" placeholder="Password">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="fname">Confirm Password</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="password" id="fname" name="password2" placeholder="Password">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="country">Course grade</label>
+                    </div>
+                    <div class="col-75">
+                        <select id="course" name="courses">
+                            <option value="primary">Primary school</option>
+                            <option value="high school">High School</option>
+                            <option value="university">University</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <input type="submit" value="Submit">
+                </div>
+            </form>
+            {{message}}
+        </div>
+    {% endblock %}
+    </div>
+</body>
+
+</html>

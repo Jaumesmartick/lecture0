@@ -1,0 +1,56 @@
+{% extends "layout.html" %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <title>BOOTSTRAP STYLE</title>
+    <style>
+        .row > div {
+            padding: 20px;
+            background-color: magenta;
+            border: 3px solid black
+        }
+    </style>
+</head>
+
+<body>
+    {% block content %}
+    <h1>Change the size of the screen to see how the tables responses.</h1>
+    <div class="container">
+        <div class="row">
+            <div class="col-3">
+                This is a section
+            </div>
+            <div class="col-3">
+                This is another section
+            </div>
+            <div class="col-3">
+                This is the last section
+            </div>
+            <div class="col-3">
+                This is the last section
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-sm-6">
+                First box
+            </div>
+            <div class="col-lg-3 col-sm-6">
+                Second box
+            </div>
+            <div class="col-lg-3 col-sm-6">
+                Third box
+            </div>
+            <div class="col-lg-3 col-sm-6">
+                Fourth box
+            </div>
+        </div>
+    </div>  
+    {% endblock %}
+</body>
+</html>

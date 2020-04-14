@@ -1,0 +1,53 @@
+/* Images of the courses */
+img {
+    height: 25%;
+    width: 25%;
+}
+
+/* Tittle of the courses page */
+.header { 
+    color: #111; 
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 24px;
+    font-weight: bold; 
+    letter-spacing: -1px; 
+    line-height: 1; 
+    text-align: center; 
+}
+
+/* unorder list of courses*/
+.courses {
+    padding: 30px; /* distance between the edges of the border and the content*/
+    margin: 100px; /* distance between the edges of the page and the div*/
+    background-color: chartreuse;
+    text-align: center;
+}
+
+/* Single course */
+.course {
+    text-align: center;
+    font-weight: bold; 
+    color: #111; 
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 14px;
+    border: 3px solid black;
+}
+
+/* Table with all the courses */
+.course-offer {
+    border: 2px solid black;
+    border-collapse: collapse; /* use it in the table tag*/
+    align-content: center;
+    width: 50%;
+}
+
+/* Course table content*/
+.course-offer-tittle,.course-offer-content {
+    border: 2px solid black;
+    padding: 3px;
+    text-align: center;
+}
+.course-offer-tittle{
+    background-color: rgba(34, 30, 30, 0.781);
+}
+

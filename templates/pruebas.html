@@ -1,0 +1,37 @@
+{% extends "layout.html" %} <!--Import the navigation bar-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pruebas</title>
+
+</head>
+<body>
+    {% block content %}
+    <h1>Aquí realizo pruebas con diferentes funciones</h1><br>
+    <p>(select the tittle)</p><br>
+    <div>
+        <h1>The boxes that gets organized by itself</h1><br>
+        <h2></h2><br>
+        <div class="boxes">
+            <div>1.This will be the first box containing some text to show the organization of the boxes when we make the screen smaller</div>
+            <div>2.This will be the second box containing some text to show the organization of the boxes when we make the screen smaller</div>
+            <div>3.This will be the third box containing some text to show the organization of the boxes when we make the screen smaller</div>
+            <div>4.This will be the fourth box containing some text to show the organization of the boxes when we make the screen smaller</div>
+            <div>5.This will be the fifth box containing some text to show the organization of the boxes when we make the screen smaller</div>
+            <div>6.This will be the sixth box containing some text to show the organization of the boxes when we make the screen smaller</div>
+            <div>7.This will be the seventh box containing some text to show the organization of the boxes when we make the screen smaller</div> 
+        </div>
+        <div>
+            <form action="post">
+                <label for="name">Introduce your name</label>
+                <input type="text" placeholder="Your Name" name="name">
+                
+
+            </form>
+        </div>
+    </div>
+    {% endblock %}
+</body>
+</html>

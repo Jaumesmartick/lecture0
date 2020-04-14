@@ -1,0 +1,26 @@
+{% extends "layout.html" %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/homepage.css"/>
+    <title>Login</title>
+</head>
+<body>
+    {% block content %}
+    <div class="container">
+        <div class="row">
+            <label for="username">Username</label>
+            <input name="username" id="username" type="text" placeholder="Username">
+        </div>
+        <div class="row">
+            <label for="password">Password</label>
+            <input name="password" id="password" type="password" placeholder="Password">
+        </div>
+        <input type="submit" value="Submit">
+        <a href="/">HomePage</a>
+    </div>
+    {% endblock %}
+</body>
+</html>

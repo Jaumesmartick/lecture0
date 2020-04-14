@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/homepage.css"/>
+    <link rel="stylesheet" href="../static/css/pruebas.css"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <title>Aula</title>
+</head>
+<body>
+    <nav>
+    <div> <!-- list of possible links-->
+        <ul class="navigation-bar">
+            <li class="link-item">
+                <a href="/">HomePage</a>
+            </li>
+            <li class="link-item">
+                <a href="{{url_for('register')}}">Register</a>
+            </li>
+            <li class="link-item">
+                <a href="{{url_for('login')}}">Login</a>
+            </li>
+            <li class="link-item">
+                <a href="{{url_for('courses')}}">Courses</a>
+            </li>
+            <li class="link-item" style="float:right">
+                <a href="{{url_for('aboutus')}}">About Us</a>
+            </li>
+            <li class="link-item">
+                <a href="{{url_for('pruebas')}}">Pruebas</a>
+            </li>
+            <li class="link-item">
+                <a href="{{url_for('bootstrap')}}">Bootstrap</a>
+            </li>
+        </ul>
+    </div>
+    </nav>
+    {% block content %}
+    {% endblock %}
+
+</body>
+</html>
