@@ -18,6 +18,7 @@ def home():
     now = datetime.datetime.now()
     return render_template("home.html",date=now)
 
+#REGISTER USERS IN THE DATABASE
 @app.route("/register",methods=["GET", "POST"])
 def register():
     if request.method == "GET":
@@ -45,13 +46,19 @@ def register():
         User = {"username":username,"first_name":first_name,"last_name":last_name,"password":password1,"email":email}
         return render_template("regcompleted.html",user=User)
 
+
 @app.route("/login")
 def login():
     return render_template("login.html")
 
+
 @app.route("/courses")
 def courses():
     return render_template("courses.html")
+
+@app.route("/registercourses")
+def reg_courses():
+    return render_template("regcourses.html")
 
 @app.route("/aboutus")
 def aboutus():

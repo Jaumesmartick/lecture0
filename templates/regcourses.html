@@ -1,0 +1,29 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<form action="post">HELLO
+    <label for="course">Course: </label>
+    <input type="text" name="course" placeholder="Course Name"><br>
+    <label for="price">Price: </label>
+    <input type="number" name="price" placeholder="Price"><br>
+    <label for="age">Age: </label>
+    <input type="number" name="age" placeholder="Age"><br>
+    <label for="">: </label>
+    <input type="text" name="" placeholder=" "><br>
+    <label for="decription">Description: </label>
+    <input type="text" name="decription" placeholder="Course Description"><br>
+    <label for="category">Category: </label>
+    <select name="category" id="category">
+        <option value="matematicas">Matemáticas</option>
+        <option value="castellano">Lengua Castellana</option>
+        <option value="ingles">Inglés</option>
+        <option value="ciencias">Science</option>
+        <option value="programming">Programming</option>
+    </select>
+    <label for="offer">Special Offer: </label>
+    <input type="radio" name="offer" value="1">Yes<br>
+    <input type="radio" name="offer" value="0">No<br>
+    
+</form>
+{% endblock %}

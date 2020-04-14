@@ -42,6 +42,8 @@ list.py => Trial of the connection between the python code and the database
 7. Change the classes to be unique and change the css to show the required output for every div,h1,etc.
 8. Use the Javascript tools to pop-up a message when : 
     e.g. the registration fails 
+9. Connect the database to VisualStudio
+
 
 ###########################################################################################
                             ERRORS
@@ -54,3 +56,24 @@ list.py => Trial of the connection between the python code and the database
     SOLUTION: Install psycopg2 and introduce the url where the database is held.
 3. Cannot use bootstrap when importing the html layout 
     SOLUTION: Don't use the same names for classes as bootstrap does
+4. Cannot conect the postgresql to VisualStudio
+
+###########################################################################################
+                            DATABASES
+###########################################################################################
+
+1. alumnos
+    a.username
+    b.first_name
+    c.last_name
+    d.email
+    e.password
+    f.edad
+
+2.courses   
+    a. name
+    b. price
+    c. edad
+    d. description
+    e. categoria
+    f. spec_offer
